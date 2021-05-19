@@ -8,6 +8,7 @@ namespace Calculator
         {
             double firstValue = double.Parse(Console.ReadLine());
             ConsoleKey consoleKey = Console.ReadKey().Key;
+            double secondValue = double.Parse(Console.ReadLine());
             switch (consoleKey)
             {
                 case ConsoleKey.Backspace:
@@ -157,7 +158,6 @@ namespace Calculator
                 case ConsoleKey.Multiply:
                     break;
                 case ConsoleKey.Add:
-                    double secondValue = double.Parse(Console.ReadLine());
                     Console.WriteLine(firstValue + secondValue);
                     break;
                 case ConsoleKey.Separator:
